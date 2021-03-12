@@ -1,0 +1,79 @@
+.me{
+    .my_bg{
+        height: 200px;
+        background-image: url('../images/dijia.jpg');
+        background-position:center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /deep/ .van-uploader{
+        display: block;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    /deep/ .van-uploader__wrapper{
+        height: 100%;
+    }
+
+    /deep/ .van-uploader__upload{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .my_box{
+        background-image: linear-gradient(to bottom,rgba(255,255,255,.65) 0px,rgba(255,255,255,.65) 40px,#fff 40px);
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        position: relative;
+        top: -40px;
+        margin: 0px 10px;
+    }
+    .my_info{
+        height: 60px;
+        display: flex;
+    }
+    .my_img{
+        width: 60px;
+        height: 60px;
+        background-color: #ddd;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 10px;
+        position: relative;
+    }
+    .up_img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .my_text{
+        width: calc(100% - 70px);
+    }
+
+    .my_name{
+        height: 30px;
+        line-height: 30px;
+        color:#B2A3DA;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .my_desc{
+        font-size: 14px;
+        color: #666;
+        height: 30px;
+        line-height: 30px;
+    }
+    .my_list{
+        margin-top: 60px;
+    }
+    /deep/ .van-cell{
+        padding: 10px 0px;
+        &:active{
+            background-color: #fff;
+        }
+    }
+}
